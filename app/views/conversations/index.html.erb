@@ -1,0 +1,9 @@
+<!-- helper method -->
+<% page_header "Your Conversations" %>
+
+<ul class="list-group">
+  <%= render partial: 'conversations/conversation', collection: @conversations %>
+</ul>
+
+<!-- Gem displays paginate controls if required -->
+<%= will_paginate %>
